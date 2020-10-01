@@ -90,19 +90,19 @@ body,html{
     background-attachment: fixed;
 }
 .pimg1{
-    background-image: url("../项目7/1.jpg");
+    background-image: url("./1.jpg");
     min-height: 100%;
 }
 .pimg2{
-    background-image: url("../项目7/2.jpg");
+    background-image: url("./2.jpg");
     min-height: 50%;
 }
 .pimg3{
-    background-image: url("../项目7/3.jpg");
+    background-image: url("./3.jpg");
     min-height: 50%;
 }
 .pimg4{
-    background-image: url("../项目7/4.jpg");
+    background-image: url("./4.jpg");
     min-height: 100%;
 }
 section{
