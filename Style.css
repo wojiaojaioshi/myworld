@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body,html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.8em;
+}
+
+.navbar{
+    background-color: #3b5998;
+    overflow: hidden;
+    height: 40px;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px 16px;
+    margin: -3px 0 0;
+}
+
+.navbar ul{
+    margin: -8px 0 0 0;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: #ddd;
+    color: #000;
+}
+
+.side-nav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.a1{
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #ccc;
+    display: block;
+    transition: 0.3s;
+}
+
+.a1:hover{
+    color: #ff001e;
+    background-color: #ffffff;
+    background-image: linear-gradient(62deg, #c3f647 0%, #6984e8 19%, #d91fd6 39%, #5de3bc 60%, #bb5050 80%, #66e010 100%);
+
+
+    opacity: 0.3;
+}
+
+.side-nav .btn-close{
+    position: relative;
+    top: -52px;
+    left: 220px;
+    font-size: 30px;
+    float: left;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4{
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.pimg1{
+    background-image: url("../项目7/1.jpg");
+    min-height: 100%;
+}
+.pimg2{
+    background-image: url("../项目7/2.jpg");
+    min-height: 50%;
+}
+.pimg3{
+    background-image: url("../项目7/3.jpg");
+    min-height: 50%;
+}
+.pimg4{
+    background-image: url("../项目7/4.jpg");
+    min-height: 100%;
+}
+section{
+    text-align: center;
+    padding: 50px 80px;
+}
+.section-light{
+    color: #666;
+    background: #f4f4f4;
+}
+.section-dark{
+    color: #ddd;
+    background: #282e34;
+}
+.ptext{
+ position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+
+}
+.pimg1 .ptext .border
+{
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    opacity: 0.5;
+}
+.pimg4 .ptext .border
+{
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
+    opacity: 0.5;
+}
+.pimg4 .ptext .border:hover{
+    color: #f60505;
+}

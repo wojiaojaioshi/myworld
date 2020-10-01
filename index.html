@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../项目7/Style.css">
+    <title>Side Menu</title>
+</head>
+
+<body>
+
+<nav class="navbar">
+        <span class="open-side">
+            <a href="#" onclick="openSideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 15,5" stroke="#fff" stroke-width="2" />
+                    <path d="M0,9 15,9" stroke="#fff" stroke-width="2" />
+                    <path d="M0,14 15,14" stroke="#fff" stroke-width="2" />
+                </svg>
+            </a>
+        </span>
+
+    <ul class="navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+    <a href="#a1"  class="a1">你的世界</a>
+    <a href="#a2" class="a1">他的世界</a>
+    <a href="#a3" class="a1">我的世界</a>
+    <a href="#a4" class="a1">创建一个你的世界吧</a>
+</div>
+
+<div class="pimg1">
+    <div class="ptext">
+        <span class="border">
+            你的世界
+        </span>
+        <a name="a1"></a>
+    </div>
+</div>
+<section class="section-light">
+    <h2>二十一世纪</h2>
+    <p>Anti Tracks is a complete solution to protect your privacy and enhance your PC performance. With a simple click Anti Tracks securely erase your internet tracks, computer activities and programs history information stored in many hidden files on your computer.Anti Tracks support Internet Explorer, AOL, Netscape/Mozilla and Opera browsers. It also include more than 85 free plug-ins to extend erasing features to support popular programs such as ACDSee, Acrobat Reader, KaZaA, PowerDVD, WinZip, iMesh, Winamp and much more. Also you can easily schedule erasing tasks at specific time intervals or at Windows stat-up/ shutdown.To ensure maximum privacy protection Anti Tracks implements the US Department of Defense DOD 5220.22-M, Gutmann and NSA secure erasing methods, making any erased files unrecoverable even when using advanced recovery tools.
+        From: http://www.hxen.com/yingyuwenzhang/computer-network/security/2008-06-25/42311.html</p>
+</section>
+<div class="pimg2">
+    <div class="ptext">
+        <span class="border">
+            他的世界
+        </span>
+        <a name="a2"></a>
+    </div>
+</div>
+<section class="section-dark">
+    <h2>二十世纪</h2>
+    <p>Anti Tracks is a complete solution to protect your privacy and enhance your PC performance. With a simple click Anti Tracks securely erase your internet tracks, computer activities and programs history information stored in many hidden files on your computer.Anti Tracks support Internet Explorer, AOL, Netscape/Mozilla and Opera browsers. It also include more than 85 free plug-ins to extend erasing features to support popular programs such as ACDSee, Acrobat Reader, KaZaA, PowerDVD, WinZip, iMesh, Winamp and much more. Also you can easily schedule erasing tasks at specific time intervals or at Windows stat-up/ shutdown.To ensure maximum privacy protection Anti Tracks implements the US Department of Defense DOD 5220.22-M, Gutmann and NSA secure erasing methods, making any erased files unrecoverable even when using advanced recovery tools.
+        From: http://www.hxen.com/yingyuwenzhang/computer-network/security/2008-06-25/42311.html</p>
+</section>
+<div class="pimg3">
+    <div class="ptext">
+        <span class="border">
+            我的世界
+        </span>
+        <a name="a3"></a>
+    </div>
+</div>
+<section class="section-light">
+    <h2>十九世纪</h2>
+    <p>Anti Tracks is a complete solution to protect your privacy and enhance your PC performance. With a simple click Anti Tracks securely erase your internet tracks, computer activities and programs history information stored in many hidden files on your computer.Anti Tracks support Internet Explorer, AOL, Netscape/Mozilla and Opera browsers. It also include more than 85 free plug-ins to extend erasing features to support popular programs such as ACDSee, Acrobat Reader, KaZaA, PowerDVD, WinZip, iMesh, Winamp and much more. Also you can easily schedule erasing tasks at specific time intervals or at Windows stat-up/ shutdown.To ensure maximum privacy protection Anti Tracks implements the US Department of Defense DOD 5220.22-M, Gutmann and NSA secure erasing methods, making any erased files unrecoverable even when using advanced recovery tools.
+        From: http://www.hxen.com/yingyuwenzhang/computer-network/security/2008-06-25/42311.html</p>
+</section>
+<div class="pimg4">
+    <div class="ptext">
+        <a href="http://localhost:63342/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8Bio/.idea/%E9%A1%B9%E7%9B%AE5/Log-in%20interface.html?_ijt=bta3ot3irs6nbr3a629pkva7k3" class="border" name="a4">创建你的世界</a>
+    </div>
+</div>
+<section class="section-dark">
+    <h2>未来的世纪</h2>
+    <p>Anti Tracks is a complete solution to protect your privacy and enhance your PC performance. With a simple click Anti Tracks securely erase your internet tracks, computer activities and programs history information stored in many hidden files on your computer.Anti Tracks support Internet Explorer, AOL, Netscape/Mozilla and Opera browsers. It also include more than 85 free plug-ins to extend erasing features to support popular programs such as ACDSee, Acrobat Reader, KaZaA, PowerDVD, WinZip, iMesh, Winamp and much more. Also you can easily schedule erasing tasks at specific time intervals or at Windows stat-up/ shutdown.To ensure maximum privacy protection Anti Tracks implements the US Department of Defense DOD 5220.22-M, Gutmann and NSA secure erasing methods, making any erased files unrecoverable even when using advanced recovery tools.
+        From: http://www.hxen.com/yingyuwenzhang/computer-network/security/2008-06-25/42311.html</p>
+</section>
+
+
+
+
+
+<script>
+    function openSideMenu() {
+        document.getElementById('side-menu').style.width = '250px';
+
+    }
+
+    function closeSideMenu() {
+        document.getElementById('side-menu').style.width = '0';
+
+    }
+</script>
+<a name="bottom"></a>
+</body>
+
+</html>
