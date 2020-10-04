@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../项目5/登陆界面.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container" id="j">
+    <div class="container3"><a href="#"><i id="a" class="fa fa-user-circle" aria-hidden="true"></i></a></div>
+    <form id="u" action="http://wojiaojiaoshi.ml/">
+        <div class="container2">
+            <h1>登陆</h1>
+            <input type="text" placeholder="用户名"><br>
+            <input type="text" placeholder="密码"><br>
+   <div class="loading" id="b"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+       <span class="sr-only">Loading...</span></div>
+            <br>
+            <input class="botton" onclick="c()" type="b"value="提交">
+
+
+        </div>
+    </form>
+</div>
+<script>
+    function f() {
+        let a=document.getElementById("a");
+        a.innerHTML="f2bd";
+        setTimeout(function () {
+            a.innerHTML="f2be";
+        },2000);
+    }
+    a();
+    setInterval(a,2000)
+    function c() {
+        let j=document.getElementById("j")
+        let b=document.getElementById("b")
+        setTimeout(function () {
+            b.style.opacity=1;
+            j.style.opacity=0.5
+            sumit()
+
+        },)
+        sumit();
+    }
+    function sumit() {
+        setTimeout(function () {
+            u.submit()
+        },1000)
+    }
+</script>
+</body>
+</html>
