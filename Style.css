@@ -147,6 +147,9 @@ section{
 .pimg4 .ptext .border:hover{
     color: #f60505;
 }
+.pimg1 .ptext .border:hover{
+    color: #f60505;
+}
 .pimg2 .ptext a{
     color: #3b1c1c;
     opacity: 0.3;
