@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+        }
+        .list {
+            width: 100%;
+            height: 400px;
+            list-style: none;
+            padding: 0;
+        }
+        .item{
+            width: 800px;
+            height: 400px;
+            font-size: 100px;
+            position: absolute;
+            color: #fff;
+            opacity: 0;
+            transition: all .5s;
+            cursor: pointer;
+        }
+        .item:nth-child(1){
+            background-image: url("1.jpg");
+        }
+        .item:nth-child(2){
+            background-image: url("2.jpg");
+        }
+        .item:nth-child(3){
+            background-image: url("3.jpg");
+        }
+        .item:nth-child(4){
+            background-image: url("4.jpg");
+        }
+        .item:nth-child(5){
+            background-image: url("5.jpg");
+        }
+        .item:nth-child(1),.item:nth-child(2),.item:nth-child(3),
+        .item:nth-child(4),.item:nth-child(5)
+        {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        .btn{
+            width: 50px;
+            height: 100px;
+            position: absolute;
+            top: 150px;
+            z-index: 100;
+            opacity: 0.1;
+        }
+        .btn:hover{
+            opacity: 0.5;
+        }
+        #gopre{
+            left: 0;
+        }
+        #gonext{
+            position: relative;
+            right: -750px;
+        }
+        .item.active{
+            opacity: 1;
+            z-index: 10;
+        }
+        .pointlist{
+            padding-left: 8px;
+            list-style: none;
+            position: relative;
+            left: 670px;
+            bottom: 20px;
+            z-index: 1000;
+        }
+        .point{
+            width: 8px;
+            height: 8px;
+            background-color: rgba(0,0,0,0.4);
+            border-radius: 100% ;
+            float: left;
+            margin-right: 10px;
+            border: 2px solid rgba(255,255,255,0.6);
+            cursor: pointer;
+        }
+        .point.active{
+            background-color: rgba(255,255,255,0.8);
+        }
+
+
+    </style>
+</head>
+<body>
+        <div class="container">
+
+            <ul class="list">
+                <li class="item active"></li>
+                <li class="item"></li>
+                <li class="item"></li>
+                <li class="item"></li>
+                <li class="item"></li>
+                <button type="button" class="btn" id="gopre" ><</button>
+                <button type="button" class="btn" id="gonext" >></button>
+            </ul>
+            <ul class="pointlist">
+                <li class="point active" data-index='0'></li>
+                <li class="point" data-index='1'></li>
+                <li class="point" data-index='2'></li>
+                <li class="point" data-index='3'></li>
+                <li class="point" data-index='4'></li>
+            </ul>
+
+        </div>
+
+        <script type="text/javascript">
+
+            let item=document.getElementsByClassName("item")
+            let gopre=document.getElementById("gopre")
+            let gonext=document.getElementById("gonext")
+            let point=document.getElementsByClassName("point")
+            let index=0
+            let time=0;
+            function clearactive() {
+                for(let i=0;i<item.length;i++)
+                {
+                    item[i].className="item"
+                    point[i].className="point"
+                }
+            }
+            function goindex() {
+                clearactive()
+                point[index].className="point active"
+                item[index].className="item active";
+            }
+            function goNext() {
+                if(index<4)
+                index++;
+                else
+                    index=0;
+                goindex();
+            }
+            function goPre() {
+                if(index==0)
+                index=4;
+                else
+                    index--
+                goindex();
+            }
+            gonext.addEventListener('click',function () {
+                time=0;
+                goNext()
+            })
+            gopre.addEventListener('click',function () {
+                time=0;
+                goPre()
+            })
+            for(let i=0;i<point.length;i++)
+            {
+                point[i].addEventListener('click',function () {
+                    let pointindex=this.getAttribute('data-index');
+                    console.log(pointindex)
+                    index=pointindex
+                    time=0;
+                    goindex()
+                })
+            }
+            setInterval(function () {
+                    time++;
+                if(time==20)goNext();
+                if(time>20){
+                    time=0;
+                    
+                }
+
+            },100)
+        </script>
+</body>
+</html>
